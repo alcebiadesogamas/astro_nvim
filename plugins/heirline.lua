@@ -13,7 +13,7 @@ return {
           status.component.cmd_info(),
           status.component.fill(),
           status.component.lsp(),
-          status.component.treesitter(),
+          -- status.component.treesitter(),
           status.component.nav(),
           -- remove the 2nd mode indicator on the right
         }
