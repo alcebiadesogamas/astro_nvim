@@ -6,11 +6,6 @@ return {
 
 --- colorschemes
   { import = "astrocommunity.colorscheme.catppuccin" },
-  { -- further customize the options set by the community
-    "catppuccin",
-    opts = { transparent_background = true,},
-  },
-
   { import = "astrocommunity.colorscheme.nightfox-nvim" },
  {
   "EdenEast/nightfox.nvim",
@@ -43,17 +38,17 @@ return {
     name = "catppuccin",
     priority = 1000,
     opts = {
-      transparent_background = true,
+      transparent_background = false,
       integrations = {
         telescope = true,
-        harpoon = true,
+        -- harpoon = true,
         mason = true,
-        neotest = true,
+        -- neotest = true,
       }
     },
     config = function(_, opts)
       require('catppuccin').setup(opts)
-      vim.cmd.colorscheme 'catppuccin-mocha'
+      vim.cmd.colorscheme 'catppuccin-machiatto'
     end
   },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
